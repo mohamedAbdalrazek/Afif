@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600;700&family=Marhey:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Marhey', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* start nav*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height: 65px;
+    align-items: center;
+    width: 100%;
+    padding: 30px 30px;
+    /* transition: background-color 300ms linear; */
+    transition: all .2s;
+}
+.nav .logo{
+    width: 50%;
+
+}
+.nav .logo img{
+    max-width: 150px;
+    cursor: pointer;
+
+}
+.nav .links{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-right: 60px;
+
+}
+.nav .links a{
+    text-decoration: none;
+    color: white;
+    margin-left: 24px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav .links a:hover{
+    text-decoration: underline;
+}
+/* start landing  */
+.landing{
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    align-items: center;
+    background: linear-gradient(0deg, #013E43 0%, #295C51 100%);;
+    padding-top: 50px;
+}
+.landing > div{
+    width: 50%;
+}
+.landing .right img{
+    width: 220px;
+    display: block;
+    margin: auto;
+}
+.landing .left{
+    color: white;
+}
+.landing .left h1{
+    font-size: 46px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.landing .left p{
+    margin-bottom: 40px;
+}
+.landing .left .buttons{
+    display: flex;
+}
+.landing .left .buttons a{
+    width: 170px;
+    height: 100;
+}
+.landing .left .buttons a img{
+    width: 100%;
+}
+/* start services  */
+.services{
+    height: 100vh;
+    padding-top: 50px;
+}
+.special-heading{
+    font-size: 48px;
+    font-weight: 500;
+    color: #013E43;
+    text-align: center;
+    margin-bottom: 50px;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.services .option{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.services .option span{
+    cursor: pointer;
+    border: 1px solid #D8D9DB;
+    padding: 10px 40px;
+    border-radius: 28px;
+    margin-left: 10px;
+    color: #013E43;
+    margin-right: 10px;
+    display: flex;
+    transition: .3s all;
 }
+.services .option span:hover{
+    background-color: #52BC9A;
+    color: white;
+}
+.services .main-section{
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.services .main-section div{
+    width: calc(100% / 3 - 20px);
+    margin-right: 20px;
+    text-align: center;
+}
+.services .main-section div img{
+    margin-bottom: 30px;
+    width: 300px;
+}
+.services .main-section div h3{
+    font-size: 20px;
+    color: #2F314F;
+    font-weight: 600;
+    margin-bottom: 10px;
+    min-height: 60px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.services .main-section div:first-of-type h3{
+}
+.services .main-section div p{
+    color: #717280;
+    font-size: 14px;
+    font-weight: 400;
+    width: 80%;
+    margin: auto;
+}
+/* start about  */
+.about{
+    padding-top: 50px;
+}
+.about .about-content{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.about .about-content div{
+    width: 50%;
+}
+.about .about-content .left img{
+    max-width: 450px;
+    display: block;
+    margin: auto;
+}
+.about .about-content .right{
+    padding-left: 20px;
+}
+.about .about-content .right p{
+    width: 90%;
+    color:#717280;
+    line-height: 1.8;
+    font-weight: 300;
+
+    font-size: 18px;
 }
