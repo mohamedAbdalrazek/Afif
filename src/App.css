@@ -544,5 +544,8 @@
         width: 310px;
     }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1400px) {
+    .landing .right img {
+        width: 400px;
+    }
 }
