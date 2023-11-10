@@ -86,7 +86,6 @@
 }
 /* start services  */
 .services {
-    height: 100vh;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -207,12 +206,13 @@
         font-size: 24px;
         right: 20px;
         top: 20px;
+        
     }
     .close {
         position: absolute;
         right: 60px;
         top: 15px;
-        font-size: 20px;
+        font-size: 24px;
         color: #013e43;
     }
     .show {
@@ -220,7 +220,7 @@
     }
     .nav .logo {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     .nav .logo img {
         max-width: 150px;
@@ -235,14 +235,14 @@
         margin: 0;
         padding: 0;
         text-align: left;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .landing {
-        height: calc(100vh - 50px);
+        height: calc(100vh);
         padding-right: 25px;
         padding-left: 25px;
-        padding-top: 50px;
+        padding-top: 0px;
         flex-direction: column;
     }
     .landing > div {
@@ -386,10 +386,10 @@
     }
 
     .landing {
-        height: calc(100vh - 50px);
+        height: calc(100vh);
         padding-right: 25px;
         padding-left: 25px;
-        padding-top: 50px;
+        padding-top: 0px;
         flex-direction: column;
     }
     .landing > div {

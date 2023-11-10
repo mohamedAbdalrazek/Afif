@@ -10,7 +10,7 @@ export default function Nav() {
         if (window.scrollY > 1) {
             if (isScrolled === false) {
                 setIsScrolled(true);
-                setShowNav(false)
+                setShowNav(false);
             }
         } else {
             setIsScrolled(false);
@@ -27,9 +27,10 @@ export default function Nav() {
         nav: true,
         show: showNav,
     });
-    const isSmall = window.screen.width <= 768
+    const isSmall = window.screen.width <= 768;
+    const offset = isSmall ? 0 : -85;
     return (
-        <div >
+        <div>
             {isSmall && (
                 <FontAwesomeIcon
                     icon={faBars}
@@ -46,7 +47,20 @@ export default function Nav() {
                     />
                 )}
                 <div className="logo">
-                    <img src={require(!isSmall ? "../images/logo.png" : "../images/logo1.png")} />
+                    <Link
+                        activeClass="active"
+                        to="/"
+                        smooth={true}
+                        duration={500}
+                        onClick={() => setShowNav(false)}
+                        // onSetActive={handleSetActive}?
+                    >
+                        <img
+                            src={require(!isSmall
+                                ? "../images/logo.png"
+                                : "../images/logo1.png")}
+                        />
+                    </Link>
                 </div>
 
                 <div className="links">
@@ -55,6 +69,7 @@ export default function Nav() {
                         to="/"
                         smooth={true}
                         duration={500}
+                        onClick={() => setShowNav(false)}
                         // onSetActive={handleSetActive}?
                     >
                         Home
@@ -64,7 +79,7 @@ export default function Nav() {
                         to="services"
                         spy={true}
                         smooth={true}
-                        offset={-85}
+                        offset={offset}
                         duration={500}
                         // onSetActive={handleSetActive}?
                     >
@@ -75,7 +90,7 @@ export default function Nav() {
                         to="about"
                         spy={true}
                         smooth={true}
-                        offset={-85}
+                        offset={offset}
                         duration={500}
                         // onSetActive={handleSetActive}?
                     >
@@ -86,7 +101,7 @@ export default function Nav() {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={-85}
+                        offset={offset}
                         duration={500}
                         // onSetActive={handleSetActive}?
                     >
