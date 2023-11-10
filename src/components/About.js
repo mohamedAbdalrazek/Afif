@@ -6,7 +6,7 @@ export default function About() {
             <h1 className="special-heading">About Us</h1>
             <div className="about-content">
                 <div className="left">
-                    <img src={require("../images/test about.png")} />
+                    <img src={require("../images/test about1.png")} />
                 </div>
                 <div className="right">
                     <p>

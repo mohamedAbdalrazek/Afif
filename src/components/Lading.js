@@ -26,7 +26,7 @@ export default function Landing() {
                 </div>
             </div>
             <div className="right">
-                <img src={require("../images/test.png")} />
+                <img src={require("../images/test1.png")} />
             </div>
         </div>
     );
