@@ -3,6 +3,8 @@ import React from "react";
 export default function Landing() {
     return (
         <div className="landing" id="/">
+            <div className="background">
+            </div>
             <div className="left">
                 <h1>Commodo elit exercitation..</h1>
                 <p>

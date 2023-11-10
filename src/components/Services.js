@@ -62,10 +62,10 @@ export default function Services() {
             <h1 className="special-heading">
                 Services
             </h1>
-            <div className="option">
+            {/* <div className="option">
                 <span onClick={()=>setSection(1)} style={section===1 ? activeStyle :{}}>Supervisor</span>
                 <span onClick={()=>setSection(2)} style={section===2 ? activeStyle :{}}>User</span>
-            </div>
+            </div> */}
             {section === 1 ? (
                 <div className="main-section super">
                     {superSections}

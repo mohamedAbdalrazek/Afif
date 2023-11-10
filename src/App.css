@@ -15,6 +15,8 @@
     position: fixed;
     height: 65px;
     align-items: center;
+    z-index: 1000;
+
     width: 100%;
     padding: 30px 30px;
     /* transition: background-color 300ms linear; */
@@ -48,20 +50,37 @@
 .landing {
     height: calc(100vh - 50px);
     display: flex;
+    position: relative;
     justify-content: center;
     padding-right: 40px;
     padding-left: 40px;
     align-items: center;
-    background: linear-gradient(0deg, #013e43 0%, #295c51 100%);
+    background: linear-gradient(0deg, #013e43ee 0%, #295c51ee 100%);
     padding-top: 50px;
+}
+.landing .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
 }
 .landing > div {
     width: 50%;
 }
+.landing .right{
+    display: flex;
+    justify-content: end;
+    padding-right: 110px;
+}
 .landing .right img {
-    width: 350px;
+    width: 330px;
     display: block;
-    margin: auto;
 }
 .landing .left {
     color: white;
@@ -480,6 +499,9 @@
     }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+    .landing .right{
+        padding-right: 15px;
+    }
     .landing .right img {
         width: 290px;
     }
@@ -508,13 +530,16 @@
         margin-bottom: 10px;
     }
     .about .about-content .left img{
-        width: 380px;
+        width: 360px;
         margin-bottom: 40px;
     }
 
 
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
+    .landing .right{
+        padding-right: 30px;
+    }
     .landing .right img {
         width: 310px;
     }
