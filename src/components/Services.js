@@ -60,7 +60,7 @@ export default function Services() {
     return (
         <div className="services" id="services">
             <h1 className="special-heading">
-                Services
+                What We Offer
             </h1>
             {/* <div className="option">
                 <span onClick={()=>setSection(1)} style={section===1 ? activeStyle :{}}>Supervisor</span>
