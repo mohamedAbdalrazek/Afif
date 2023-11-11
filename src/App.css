@@ -22,6 +22,19 @@
     /* transition: background-color 300ms linear; */
     transition: all 0.2s;
 }
+
+.phone-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 125px;
+    top:15px;
+    left: 20px;
+}
+.phone-logo img{
+    max-width: 100%;
+}
 .nav .logo {
     width: 50%;
 }
@@ -58,7 +71,7 @@
     background: linear-gradient(0deg, #013e43ee 0%, #295c51ee 100%);
     padding-top: 50px;
 }
-.landing .background{
+.landing .background {
     position: absolute;
     top: 0;
     left: 0;
@@ -73,7 +86,7 @@
 .landing > div {
     width: 50%;
 }
-.landing .right{
+.landing .right {
     display: flex;
     justify-content: end;
     padding-right: 110px;
@@ -200,6 +213,34 @@
 
     font-size: 18px;
 }
+.about h3{
+    margin-top: 10px;
+    font-size: 26px;
+    color: #013e43;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.about .email svg{
+    color: #013e43;
+    margin-right: 10px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.about .email a{
+    text-decoration: none;
+    color: black;
+}
+.about .email a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: #013e43;
+    color: white;
+    padding: 20px 0;
+}
+footer p{
+    text-align: center;
+}
 
 @media (max-width: 480px) {
     .nav {
@@ -225,7 +266,6 @@
         font-size: 24px;
         right: 20px;
         top: 20px;
-        
     }
     .close {
         position: absolute;
@@ -264,6 +304,10 @@
         padding-top: 0px;
         flex-direction: column;
     }
+    .landing .background{
+
+        background-image: url(./images/backphone.png);
+    }
     .landing > div {
         width: 100%;
     }
@@ -271,7 +315,7 @@
         display: none;
     }
     .landing .left {
-            width: 100%;
+        width: 100%;
     }
     .landing .left h1 {
         text-align: center;
@@ -294,7 +338,7 @@
     }
 
     .services .option {
-        margin-bottom: 40px ;
+        margin-bottom: 40px;
     }
     .services .option span {
         padding: 10px 30px;
@@ -322,31 +366,28 @@
         margin-bottom: 40px;
     }
 
-
-    .about{
+    .about {
         padding-top: 50px;
         padding-bottom: 50px;
-    
     }
-    .about .about-content{
+    .about .about-content {
         flex-direction: column;
         padding-right: 20px;
         padding-left: 20px;
     }
-    .about .about-content div{
+    .about .about-content div {
         width: 100%;
     }
-    .about .about-content .left img{
+    .about .about-content .left img {
         width: 220px;
         margin-bottom: 40px;
     }
-    .about .about-content .right{
+    .about .about-content .right {
         padding-left: 0px;
     }
-    .about .about-content .right p{
+    .about .about-content .right p {
         text-align: center;
         width: 100%;
-
     }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -418,7 +459,7 @@
         display: none;
     }
     .landing .left {
-            width: 100%;
+        width: 100%;
     }
     .landing .left h1 {
         text-align: center;
@@ -441,7 +482,7 @@
     }
 
     .services .option {
-        margin-bottom: 40px ;
+        margin-bottom: 40px;
     }
     .services .option span {
         padding: 10px 30px;
@@ -471,35 +512,32 @@
         font-size: 16px;
     }
 
-
-    .about{
+    .about {
         padding-top: 50px;
         padding-bottom: 50px;
-    
     }
-    .about .about-content{
+    .about .about-content {
         flex-direction: column;
         padding-right: 20px;
         padding-left: 20px;
     }
-    .about .about-content div{
+    .about .about-content div {
         width: 100%;
     }
-    .about .about-content .left img{
+    .about .about-content .left img {
         width: 380px;
         margin-bottom: 40px;
     }
-    .about .about-content .right{
+    .about .about-content .right {
         padding-left: 0px;
     }
-    .about .about-content .right p{
+    .about .about-content .right p {
         text-align: center;
         width: 100%;
-
     }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-    .landing .right{
+    .landing .right {
         padding-right: 15px;
     }
     .landing .right img {
@@ -512,16 +550,16 @@
         font-size: 14px;
         /* line-height: 20px; */
     }
-    .landing .left .buttons a{
+    .landing .left .buttons a {
         width: 150px;
     }
-    .services{
+    .services {
         height: fit-content;
     }
-    .services .main-section{
+    .services .main-section {
         flex-wrap: wrap;
     }
-    .services .main-section div{
+    .services .main-section div {
         width: calc(50% - 20px);
         margin-bottom: 40px;
     }
@@ -529,15 +567,13 @@
         width: 200px;
         margin-bottom: 10px;
     }
-    .about .about-content .left img{
+    .about .about-content .left img {
         width: 360px;
         margin-bottom: 40px;
     }
-
-
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
-    .landing .right{
+    .landing .right {
         padding-right: 30px;
     }
     .landing .right img {

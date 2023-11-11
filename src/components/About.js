@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
     return (
@@ -17,6 +19,13 @@ export default function About() {
                         cillum labore. Ex culpa tempor Lorem aliqua ex ea magna
                         cupidatat ullamco in labore.
                     </p>
+                    <h3>
+                        Contact:
+                    </h3>
+                    <div className="email">
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <a href = "mailto: support@afif.ai">support@afif.ai</a>
+                    </div>
                 </div>
             </div>
         </div>

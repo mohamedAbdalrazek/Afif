@@ -38,6 +38,18 @@ export default function Nav() {
                     onClick={() => setShowNav(true)}
                 />
             )}
+            {isSmall && (
+                <Link
+                    activeClass="active"
+                    to="/"
+                    smooth={true}
+                    duration={500}
+                    className="phone-logo"
+                    // onSetActive={handleSetActive}?
+                >
+                    <img src={require("../images/logo.png")} />
+                </Link>
+            )}
             <div className={navClasses} style={isScrolled ? scrollStyle : {}}>
                 {isSmall && (
                     <FontAwesomeIcon
@@ -46,6 +58,7 @@ export default function Nav() {
                         onClick={() => setShowNav(false)}
                     />
                 )}
+
                 <div className="logo">
                     <Link
                         activeClass="active"
@@ -96,7 +109,7 @@ export default function Nav() {
                     >
                         About
                     </Link>
-                    <Link
+                    {/* <Link
                         activeClass="active"
                         to="contact"
                         spy={true}
@@ -106,7 +119,7 @@ export default function Nav() {
                         // onSetActive={handleSetActive}?
                     >
                         Contact
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>
