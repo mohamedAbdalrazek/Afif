@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
     return (
@@ -13,18 +14,18 @@ export default function Landing() {
                     minim mollit eu exercitation duis consectetur.
                 </p>
                 <div className="buttons">
-                    <a href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=tr&pli=1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                    <Link to="soon">
                         <img
                             alt="Get it on Google Play"
                             src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                         />
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=tr&pli=1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                    </Link>
+                    <Link to="soon">
                         <img
-                            alt="Get it on Google Play"
+                            alt="Get it app store"
                             src={require("../images/pngwing.com.png")}
                         />
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="right">
