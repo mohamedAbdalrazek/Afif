@@ -14,10 +14,10 @@ export default function Landing() {
                     minim mollit eu exercitation duis consectetur.
                 </p>
                 <div className="buttons">
-                    <Link to="soon">
+                    <Link to="soon" >
                         <img
                             alt="Get it on Google Play"
-                            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                            src={require("../images/en_badge_web_generic.png")}
                         />
                     </Link>
                     <Link to="soon">
